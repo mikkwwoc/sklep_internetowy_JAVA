@@ -1,0 +1,9 @@
+Czapka,29.99
+Czapka z daszkiem,19.99
+Koszulka,59.99
+Namiot,499.59
+Zeszyt,4.99
+Walizka,100.99
+Czajnik 1L,60.99
+Smartwach Xiaomi Mi Band 7,229.99
+Router TP-LINK WR820N 300Mb/s, 75.99
