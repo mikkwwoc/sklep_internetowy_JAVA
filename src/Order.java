@@ -1,4 +1,7 @@
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +15,12 @@ public class Order {
     public static String[] getOrderFiles() {        //wczytanie nazw plikow w folderze /orders do tablicy
         File file = new File("orders");
         return file.list();
+    }
+    public static void createDirectoryIfNotExists() throws IOException {      //stworzenie folderu orders jesli nie istnieje
+        try{
+            Path path = Paths.get("orders");
+            Files.createDirectory(path);
+        }catch(IOException ignored){}
     }
 
     public static int getOrderId() {               //sprawdzanie id zamowien i nadawanie id nastepnego zamowienia

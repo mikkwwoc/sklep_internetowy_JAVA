@@ -7,6 +7,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         Scanner in1 = new Scanner(System.in);
         int menuOpt = 0;
+        Order.createDirectoryIfNotExists();
         LoadItems.loadItemsToBuy();     //wczytywanie bazy danych
 
         while (menuOpt != 4) {          //MENU GŁÓWNE
